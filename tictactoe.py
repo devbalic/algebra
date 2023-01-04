@@ -6,12 +6,6 @@ igrac = 'X'
 
 # petlja
 while True:
-    # print trenutnog stanja ploče
-    print(f" {ploca[0]} | {ploca[1]} | {ploca[2]} ")
-    print("-----------")
-    print(f" {ploca[3]} | {ploca[4]} | {ploca[5]} ")
-    print("-----------")
-    print(f" {ploca[6]} | {ploca[7]} | {ploca[8]} ")
 
     # unesi potez
     potez = int(input(f"Na redu je igrač: {igrac}. Unesi svoj potez (1-9): "))
@@ -59,6 +53,13 @@ while True:
     elif ploca.count(" ") == 0:
          print(f"Igra je završila neriješeno.")   
          break
+
+    # print trenutnog stanja ploče
+    print(f" {ploca[0]} | {ploca[1]} | {ploca[2]} ")
+    print("-----------")
+    print(f" {ploca[3]} | {ploca[4]} | {ploca[5]} ")
+    print("-----------")
+    print(f" {ploca[6]} | {ploca[7]} | {ploca[8]} ")
 
     # prebaci na novog igrača
     if igrac == 'X':
